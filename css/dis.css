@@ -8,12 +8,11 @@ body{
     margin: 0;
 }
 
-div{
+/* div{
     display: inline-block;
     background-color: red;
-    width: 300px;
-    margin: 25px;
-}
+   
+} */
 
 .bggreen{
     background-color: greenyellow;
@@ -57,3 +56,36 @@ ul{
 .navbar li:hover .dropdown {
     display: block;
 } 
+
+.row{
+    display: flex;
+    width: 1200px;
+    max-width: 100%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.col{
+    width: 33.3333333%;
+    padding:0 7px;
+    margin-bottom: 14px;
+   
+}
+
+.col img{
+    width: 100%;
+}
+
+.card{
+      border :1px solid  green;
+}
+
+.col-7{
+    width: 70%;
+    background-color: blue;
+}
+
+.col-3{
+    background-color: red;
+    width: 30%;
+}
