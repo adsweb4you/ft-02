@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form  action="" method="get" enctype="multipart/form-data">
+     <div>
+       <label for="">შეიყვანეთ სახელი და გვარი</label> <br>
+       <input type="text" name="firstname" maxlength="10" value="მერაბი" placeholder="შეიყვანეთ სახელი">
+     </div>
+     
+     <div>
+         <label for="">პაროლი</label> <br>
+         <input type="password" name="pass" >
+     </div> 
+
+        
+     <div>
+        <label for="">დაბადების თარიღი</label> <br>
+        <input type="date" name="date" >
+    </div> 
+
+    <div>
+        <label for="">დაბადების თარიღი</label> <br>
+        <input type="datetime-local" name="datetime" >
+    </div>
+    
+    <div>
+        <label for="">ფერი</label> <br>
+        <input type="color" name="color" >
+    </div>
+    
+    <div>
+        <label for="">იმეილი</label> <br>
+        <input type="email" name="email" value="admin@bla.ge" disabled>
+    </div>
+
+    <div>
+        <label for="">ტელ:ნომერი</label> <br>
+        <input type="number" name="phone"  min="0" max="20">
+    </div>
+
+    <div>
+        <label for="">ლინკი</label> <br>
+        <input type="url" name="url"  >
+    </div>
+
+    <div>
+        <label for="">ფაილი</label> <br>
+        <input type="file" name="file">
+    </div>
+
+    <p>რომელია პროგრამირების ენები?</p>
+
+    <div>
+        <label for="html">html</label>
+        <input type="checkbox" id="html" name="lang" value="html">
+    </div>
+
+    <div>
+        <label for="css">css</label>
+        <input type="checkbox" id="css" name="lang" value="css" checked>
+    </div>
+
+
+    <div>
+        <label for="asp">asp</label>
+        <input type="checkbox" id="asp" name="lang" value="asp">
+    </div>
+
+    <div>
+        <label for="php">php</label>
+        <input type="checkbox" id="php" name="lang" value="php">
+    </div>
+
+<p>სქესი</p>
+
+<div>
+    <label for="man">კაცი</label>
+    <input type="radio" id="man" name="gender" value="1">
+</div>
+
+<div>
+    <label for="woman">ქალი</label>
+    <input type="radio" id="woman" name="gender" value="2">
+</div>
+
+<p>აირჩეთ ქალაქი</p>
+<div>
+    <select name="city" multiple>
+        <option value="1">თბილისი</option>
+        <option value="2">გორი</option>
+        <option value="3">ზუგდიდი</option>
+        <option value="4">ქუთაისი</option>
+    </select>
+</div>
+
+<textarea name="">zxc,zxzxmcb</textarea>
+
+    <button type="reset">გაგზავნა</button>
+
+    </form>
+</body>
+</html>

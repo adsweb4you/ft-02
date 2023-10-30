@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="" enctype="multipart/form-data">
+  
+        <div>
+            <label for="">სახელი და გვარი</label>
+           <input type="text" maxlength="10" name="firstname" value="სახელი და გვარი" placeholder="სახელი და გვარი">
+        </div>
+     
+        <div>
+            <label for="">ელ:ფოსტა</label>
+            <input type="email" name="email" required>
+        </div>
+
+        <div>
+            <label for="">აირჩიეთ ფერი</label>
+            <input type="color" name="color">
+        </div>
+
+        <div>
+            <label for="">თარიღი</label>
+            <input type="date" name="date">
+        </div>
+
+        <div>
+            <label for="">თარიღი</label>
+            <input type="datetime-local" name="date" disabled>
+        </div>
+
+
+        <div>
+            <label for="">ავატარი</label>
+            <input type="file" name="file">
+        </div>
+        
+        <div>
+            <label for="">ტელ ნომერი</label>
+            <input type="number" name="tel">
+        </div>
+
+        <div>
+            <label for="">პაროლი</label>
+            <input type="password" name="password" required>
+        </div>
+
+        <div>
+            <label for="">აირჩიეთ კურსი</label>
+            <select name="course"  >
+                <option value="1">Font end</option>
+                <option value="2">Back end</option>
+                <option value="3">მარკეტინგი</option>
+            </select>
+        </div>
+
+        <p>ვეთანხმები წესებს და პირობებს</p>
+        <div>
+            <label for="yes">კი</label>
+            <input type="checkbox" name="terms" id="yes">
+        </div>
+
+        <div>
+            <label for="no">არა</label>
+            <input type="checkbox" name="terms" id="no">
+        </div>
+
+        <textarea name="text">dfklgdfjghbcv</textarea>
+
+        <p>აირჩიეთ სქესი</p>
+      
+       <div>
+          <label for="women">ქალი </label>
+         <input type="radio" name="gender" id="women">
+       </div>
+       <div>
+        <label for="men">კაცი </label>
+       <input type="radio" name="gender" id="men">
+     </div>
+        <button>გაგზავნა</button>
+
+    </form>
+
+    <script>
+
+   let color = document.querySelector('[type="color"]');
+   color.addEventListener('input', function(){
+    let val   = this.value;
+    document.body.style.backgroundColor = val;
+   })
+
+    </script>
+
+</body>
+</html>

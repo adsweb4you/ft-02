@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+body{
+    margin: 0;
+}
+
+div{
+    display: inline-block;
+    background-color: red;
+    width: 300px;
+    margin: 25px;
+}
+
+.bggreen{
+    background-color: greenyellow;
+}
+
+ul{
+    display: inline-block;
+    margin: auto;
+}
+
+.navbar li:hover{
+ background-color: blue;
+} 
+
+.navbar{
+    background-color: cornflowerblue;
+}
+
+.navbar :where(li)  {
+  padding: 23px 15px;
+  display: inline-block;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.d-none{
+    display: none;
+}
+
+.dropdown a{
+ display: block;
+}
+
+.dropdown {
+    display: none;
+}
+
+.navbar li:hover .dropdown {
+    display: block;
+} 
