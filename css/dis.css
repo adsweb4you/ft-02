@@ -1,3 +1,8 @@
+@font-face {
+    font-family: BPG;
+    src: url('../fonts/bpg_nino_mtavruli_bold.ttf');
+}
+
 *{
     box-sizing: border-box;
     margin-block-start: 0;
@@ -18,10 +23,10 @@ body{
     background-color: greenyellow;
 }
 
-ul{
+/* ul{
     display: inline-block;
     margin: auto;
-}
+} */
 
 .navbar li:hover{
  background-color: blue;
@@ -88,4 +93,104 @@ ul{
 .col-3{
     background-color: red;
     width: 30%;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid{
+    width: 33.33333%;
+    padding: 7px;
+}
+
+.color{
+    background-color: rgb(0, 255, 162);
+    height: 350px;
+}
+
+header{
+    background-image: url('../img/myimg.webp');
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+    /* display: flex;
+    flex-direction: row-reverse;
+    gap: 25px; */
+    /* align-items: center; ვერტიკალური განლაგება */
+   /* justify-content: center;  ჰორიზონტალური განლაგება */
+}
+ 
+
+nav{
+    background-color: #fff;
+    box-shadow: 7px 15px 21px #0000004f;
+
+}
+
+.mynavbar{
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: auto;
+    max-width: 100%;
+}
+
+.mynavbar ul li {
+    display: inline-block;
+}
+
+.mynavbar img {
+    width: 100px;
+}
+
+
+.mynavbar ul li a{
+    color: #1b161e;
+    font-family: BPG;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 15px;
+    margin-top: 10px;
+    display: block;
+   
+}
+
+.textbox{
+    width: 1200px;
+    margin: auto;
+    max-width: 100%;
+    font-family: BPG;
+    margin-top: 50px;
+   
+   
+}
+
+.txt{ 
+    padding: 50px;
+    color: #fff;
+    width:60% ;
+    border-radius: 7px;
+    background-color: #ffffff4f;
+}
+
+.txt a {
+    text-decoration: 0;
+    font-size: 12px;
+    background-color: crimson;
+    color: #fff;
+    padding: 14px 25px;
+    display: block;
+    width: fit-content;
+    border-radius: 7px;
+    margin-top: 14px;
+}
+
+.pe-5{
+    padding-right: 25px;
+}
+
+.inlfel{
+    display:  flex;
 }
