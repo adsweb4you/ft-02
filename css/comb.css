@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+}
+
+.parent p {
+    color: red;
+}
+
+.parent >  p {
+    color: rgb(0, 255, 4);
+}
+
+.parent + .test{
+    background-color: green;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 30px;
+}
+ 
+.parent ~ .test{
+    background-color: green;
+    width: 50px;
+    height: 50px;
+}
+
+ 
+.costumcheckbox{
+    width: 150px;
+    display: flex;
+ 
+}
+
+.grd{
+    width: 50%;
+    position: relative;
+}
+
+
+.costumcheckbox label{
+    position: absolute;
+    width: 77%;
+    height: 29px;
+    border-radius: 14px;
+    background-color: #ccc;
+    top: 16px;
+    transition: all .6s linear;
+}
+
+.coschecks:checked + label {
+    background-color: blueviolet;
+}
+
+.coschecks:checked ~ span {
+    left: 30px;
+}
+
+.coschecks{
+    display: none;
+}
+
+.grd span {
+    width: 20px;
+    height: 20px;
+    display: block;
+    transition: all .6s linear;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 50%;
+    top: 20px;
+    left: 6px;
+}
+
+.myboxs{
+    position: absolute;
+    transition: all 10s  linear;
+    height: 350px;
+    left: 0;
+    width: 300px;
+    background-color: black;
+}
+
+.myboxs .el{
+  width: 100%;
+ 
+  height: 100%;
+  position: absolute;
+}
+
+.el1{
+z-index: 5;
+}
+
+.el2{
+z-index: 4;
+}
+
+.el3{
+z-index: 3;
+}
+ 
+#foc:focus + .myboxs{
+    background-color: rgb(255, 0, 0);
+    left: 60%;
+    top: 25px;
+}
+ 
