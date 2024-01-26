@@ -141,3 +141,162 @@ let outs = document.getElementById('finded');
  }
 
  }
+
+
+ let arrleng = [
+   "front-end",
+   'ui/ux',
+   'devops'
+ ]
+
+  arrleng =  arrleng.map(function(el){
+    return el.replace('front-end', 'back-end');
+ })
+
+//   arrleng.forEach(function(el){
+//      if (el.length > 8) {
+//        document.getElementById('ss').innerHTML = `<h1>${el}</h1>`
+//      } else {
+//       document.getElementById('ss').innerHTML = `<p>${el}</p>`
+//      }
+// })
+
+ console.log(arrleng);
+
+
+ let x1  = '5';
+ let x2 = '8';
+
+ function sums (){
+   return  Number(x1) +  Number(x2);
+ }
+
+
+ sums();
+
+ let Testuser = [
+   'ana',
+   'ზურა',
+   'merabi',
+   undefined,
+   5,
+   'test'
+ ];
+
+ 
+
+ for (let s =  Testuser.length - 1; s >  -1; s--) {
+ 
+    
+
+   let elem = Testuser[s]
+   // if (elem == undefined) {
+   //    break;
+   // }
+
+ 
+ }
+ 
+
+//  for (x of Testuser){
+//     console.log(x);
+//  }
+
+//  for (x in Testuser){
+//    console.log(x);
+// }
+
+// let myx = 0;
+// while(myx < 25 ){
+//    //
+//    console.log(myx);
+//    myx++;
+// }
+
+let myy = 0;
+
+do {
+   console.log(myy);
+   myy++;
+} while (myy < 25);
+
+let Myusers = {
+   name:'ადმინ',
+   password:'123123',
+   avatar:'https://cdn-icons-png.flaticon.com/512/149/149071.png',
+   email:'admin@gmail.com',
+   phone:58787745,
+   nickname:{
+   nick1:'ტესტ',
+   nick2:'ტესტ1',
+   },
+   adress:[
+      'ქ.გორი მისამართი1',
+      'ქ.გორი მისამართი1',
+      'ქ.გორი მისამართი1',
+      'ქ.გორი მისამართი1'
+   ],
+   retavatar:function(arg){
+      return this.avatar + arg
+   }
+}
+
+delete Myusers.name 
+
+let getname = 'phone'
+
+let Prod = [
+   {
+      name:'ვაშლი',
+      price:250.25,
+      proc:100,
+      img:'https://planta.ge/storage/uploads/XeTK9oWHIRMDoCWvpsO7ZHz606Eru23LZ6PBVPxs.jpeg',
+   },
+
+   {
+      name:'ვაშლი',
+      price:370.25,
+      proc:100,
+      img:'https://planta.ge/storage/uploads/XeTK9oWHIRMDoCWvpsO7ZHz606Eru23LZ6PBVPxs.jpeg',
+   },
+
+   {
+      name:'ვაშლი',
+      price:330.25,
+      proc:99,
+      img:'https://planta.ge/storage/uploads/XeTK9oWHIRMDoCWvpsO7ZHz606Eru23LZ6PBVPxs.jpeg',
+   },
+]
+
+// Prod = Prod.filter(el =>{
+//    return el.price   <  300;
+// })
+
+
+Prod.forEach(el=>{
+
+   let info;
+
+   if (el.proc == 100) {
+      info = `<span> წარმატებული </span>`
+   } else {
+      info = ''
+   }
+   
+   let card = `
+   <div class="col-lg-4">
+   <div class="card"  >
+   ${info}
+  <img src="${el.img}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">${el.name}</h5>
+    <p class="card-text">${el.price} ₾</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+   </div>
+  </div>
+</div>
+   `
+
+   apple.innerHTML += card
+   
+})
