@@ -299,4 +299,62 @@ Prod.forEach(el=>{
 
    apple.innerHTML += card
    
-})
+});
+
+
+
+// let div = document.querySelector('.testdiv');
+
+// let div = document.getElementsByClassName('testdiv');
+// let div = document.getElementsByTagName('div');
+// let div = document.querySelectorAll('input[type="text"]');
+
+let div = document.getElementById('testdiv');
+let button = document.getElementById('But');
+
+// button.onclick = changeDiv;
+// button.onclick = changeDiv2;
+
+button.addEventListener('click', changeDiv);
+
+
+function changeDiv(){
+
+
+   // div.style.backgroundColor = 'red';
+   // div.style.color = 'white';
+
+
+   // div.className = div.className + " " + 'newClass';
+
+   // div.setAttribute('style', 'background-color:red');
+   // div.getAttribute('style')
+   // let hasAttr = div.hasAttribute('value');
+
+   // div.removeAttribute('class');
+
+   let text = '<p> ახალი ტექსტი </p>';
+
+   // div.innerText = text;
+   div.innerHTML = text
+
+   let active = div.getAttribute('data-active')
+
+   // if(active == 0){
+   //    div.setAttribute('data-active', '1')
+   // }else{
+   //    div.setAttribute('data-active', '0')
+   // }
+   
+
+
+
+
+
+   console.log(hasAttr);
+}
+
+
+
+
+
